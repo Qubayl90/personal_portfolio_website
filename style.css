@@ -1,0 +1,179 @@
+body {
+    display: grid;
+    grid-template-columns: 77% 23%;
+    grid-template-rows: 2vw 30vw 10vw;
+    grid-gap: 1em;
+}
+
+.background {
+    z-index: -1;
+    width: 100%;
+    position: fixed;
+    margin-top: -100px;
+}
+
+header,
+footer {
+    grid-column: 1 / span 2;
+  }
+  
+body {
+    margin: 0 auto;
+    max-width: 95%;
+    padding: 1em 0;
+    background-image: url("/static/background.jpg");
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+}
+
+header{
+    background: #eaeaea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+main {
+    background-color: rgba(0, 0, 0, 0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-header{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    background: linear-gradient(to top, rgba(255,255, 255, 0) 0%, rgb(0,0,0) 15%); 
+    align-items: flex-end;
+}
+.wrap-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-gap: 25px; 
+}
+.box{
+    max-width: 500px;
+    height: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+.grid-image{
+    object-fit: cover;
+    max-width: 500px;
+    height: auto;
+}
+.grid-text{
+    text-align: center;
+}
+
+aside{
+    background-color: rgba(0, 0, 0, 0.55);
+    /* background: #eaeaea; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0px;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0px;
+    height: 60px;
+    margin-left: -16px;
+}
+.nav-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.navbar-brand{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5%;
+}
+.navbar-list{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 17%;
+    height: 100%;
+}
+.nav-item{
+    margin: 10px;
+    width: 100%;
+    height: 100%;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    color: rgb(218, 64 , 218);
+}
+
+.profile-photo{
+    width: 100%;
+    height: 100%;
+}
+footer{
+    margin-bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.55);
+    /* background: #eaeaea; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px;
+
+}
+
+.bottom{
+    background-color: black;
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+    padding-bottom: 10px;
+
+    justify-content: space-evenly;
+}
+.footinfo{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    font: 0.6em;
+}
+.social{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    font: 0.6em;
+}
+.foothead{
+    font-size: 2em;
+}
+.tiny{
+    margin: 3px;
+}
